@@ -24,6 +24,10 @@ eureka:
     instance-id: ${spring.application.name}-${random.int}http://localhost:9191/
     # hostname: localhost
 
+services:
+  archive:
+    url: http://archive/metadata
+
 openapi:
   service:
     url: http://localhost:9191
